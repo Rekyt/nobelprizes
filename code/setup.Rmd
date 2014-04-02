@@ -1,0 +1,22 @@
+# Medicine Nobel Prizes #
+
+
+Set the environment
+```{r}
+getwd()
+setwd("Projects/nobelprizes/")
+getwd()
+```
+
+Write a file with only medicine and physiology Nobel prizes
+```{r}
+df = read.csv("data/nobelprizes.csv")
+med = subset(df,category=="medicine")
+write.csv(med,"data/medicines.csv")
+```
+You can also embed plots, for example:
+
+```{r fig.width=7, fig.height=6}
+plot(cars)
+```
+
